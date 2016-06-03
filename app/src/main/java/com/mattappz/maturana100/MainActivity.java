@@ -34,6 +34,7 @@ public void goToCheckScore(View v){
         setContentView(R.layout.activity_main);
 
 
+
     }
 
 
