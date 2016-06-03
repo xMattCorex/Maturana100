@@ -22,8 +22,7 @@ public void goToCheckScore(View v){
     Intent i = new Intent(getApplicationContext(),CheckScoresActivity.class);
     Pair<View,String> p1= Pair.create(findViewById(R.id.image),"imageTransition");
     Pair<View,String> p2= Pair.create(findViewById(R.id.sprawdz),"textTransition");
-    ActivityOptionsCompat options = ActivityOptionsCompat.
-            makeSceneTransitionAnimation(this,p1,p2);
+    ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(this,p1,p2);
     startActivity(i, options.toBundle());
 
 }
