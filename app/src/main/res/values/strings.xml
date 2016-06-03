@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Matura na 100%</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="domain_name">MattAppz</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_check_scores">CheckScoresActivity</string>
+    <string name="large_text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rhoncus rutrum nibh, vel feugiat augue rhoncus sed. Morbi ac ultricies erat. Praesent tristique efficitur sapien, egestas pretium est malesuada eu. Sed eu lorem sed risus mollis ultricies. Donec sit amet mattis neque. Cras sem magna, posuere nec sem id, sollicitudin ornare magna. Nulla facilisis at magna at interdum. Duis bibendum euismod massa, a feugiat massa efficitur nec. Integer nec congue nisl. Duis pulvinar dignissim libero nec porta. Nullam in libero ullamcorper, gravida ipsum vel, scelerisque ligula. Aliquam erat volutpat. Nulla laoreet commodo sem, id tristique lectus porttitor tincidunt. Praesent nec vestibulum ante, in condimentum neque.
+
+Etiam finibus consectetur nibh, vel luctus eros viverra vel. Vestibulum bibendum lacus quis porttitor iaculis. Ut vel tempor nulla. Duis non accumsan eros. Integer metus orci, feugiat non porttitor at, luctus et enim. Curabitur porttitor, ex sed malesuada ullamcorper, mi nunc feugiat massa, et dapibus tellus elit vel nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi dui odio, fringilla ut interdum in, hendrerit vitae dui.
+
+Praesent auctor sed sem et luctus. Cras venenatis et elit ac ornare. Aliquam sed tristique lectus. Proin convallis nibh tortor, sed semper nulla gravida non. Nulla facilisi. Vivamus dignissim arcu ac massa iaculis suscipit. In hac habitasse platea dictumst. Maecenas convallis, sem sit amet consequat scelerisque, nisl enim iaculis metus, sit amet pretium urna turpis mattis elit. Maecenas ac orci sagittis, sagittis felis vel, aliquet justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+Proin vel sem nec diam elementum aliquet vel eget nisi. Sed gravida blandit lectus at viverra. Vivamus dignissim non ligula ac efficitur. Mauris ac ex eget nibh commodo dapibus. Mauris varius sapien at consequat luctus. Suspendisse ac diam non velit interdum eleifend eu et tellus. Quisque justo sapien, faucibus eu quam eu, rutrum laoreet sem. Proin et erat non lacus scelerisque facilisis pulvinar nec leo. Nullam eget nisl ac eros luctus fringilla non vel purus.
+    </string>
+</resources>
