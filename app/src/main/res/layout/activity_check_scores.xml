@@ -18,9 +18,23 @@
             android:id="@+id/toolbar_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:transitionName="textTransition"
             android:fitsSystemWindows="true"
             app:contentScrim="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+
+            <ImageView
+                android:id="@+id/obrazek"
+                android:layout_width="wrap_content"
+                android:scaleType="centerCrop"
+                android:fitsSystemWindows="true"
+                android:transitionName="imageTransition"
+                android:layout_height="wrap_content"
+                android:src="@drawable/obrazek"
+                />
+
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
@@ -28,6 +42,8 @@
                 android:layout_height="?attr/actionBarSize"
                 app:layout_collapseMode="pin"
                 app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
 
         </android.support.design.widget.CollapsingToolbarLayout>
     </android.support.design.widget.AppBarLayout>

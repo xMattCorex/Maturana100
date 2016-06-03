@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.ActivityOptionsCompat;
+import android.support.v4.util.Pair;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -18,7 +20,12 @@ public class MainActivity extends AppCompatActivity{
 
 public void goToCheckScore(View v){
     Intent i = new Intent(getApplicationContext(),CheckScoresActivity.class);
-    startActivity(i);
+    Pair<View,String> p1= Pair.create(findViewById(R.id.image),"imageTransition");
+    Pair<View,String> p2= Pair.create(findViewById(R.id.sprawdz),"textTransition");
+    ActivityOptionsCompat options = ActivityOptionsCompat.
+            makeSceneTransitionAnimation(this,p1,p2);
+    startActivity(i, options.toBundle());
+
 }
 
     @Override
