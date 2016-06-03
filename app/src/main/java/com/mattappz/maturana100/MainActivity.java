@@ -26,6 +26,7 @@ public void goToCheckScore(View v){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
     }
 
 
