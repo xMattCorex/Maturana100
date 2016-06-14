@@ -16,7 +16,6 @@ import android.view.View;
 import android.view.ViewTreeObserver;
 
 public class CheckScoresActivity extends AppCompatActivity {
-    // FloatingActionButton fab;
 
     Toolbar toolbar;
     NestedScrollView mNestedScrollView;
