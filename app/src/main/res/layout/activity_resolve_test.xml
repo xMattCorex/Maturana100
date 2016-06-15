@@ -22,7 +22,8 @@
      android:layout_height="wrap_content"
      android:id="@+id/questionTextView"
      android:text="dummy TEXT"
-     android:layout_gravity="center"/>
+     android:layout_gravity="center"
+     android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
     </android.support.v7.widget.CardView>
 
     <android.widget.RelativeLayout
@@ -34,6 +35,7 @@
             <android.support.v7.widget.CardView
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="5dp"
+                android:transitionName="cardTransitionA"
                 android:id="@+id/optionACard"
                 android:layout_height="80dp"
                 android:layout_width="170dp"
@@ -56,16 +58,19 @@
                         android:gravity="center"/>
 
                 </android.widget.LinearLayout>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/optionATextView"
                     android:text="Option A"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
                 android:layout_marginLeft="10dp"
+                android:transitionName="cardTransitionB"
                 android:layout_marginRight="5dp"
                 android:layout_toRightOf="@+id/optionACard"
                 android:layout_marginTop="10dp"
@@ -93,7 +98,8 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/optionBTextView"
                     android:text="Option B"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
             </android.support.v7.widget.CardView>
 
@@ -101,6 +107,7 @@
 
             <android.support.v7.widget.CardView
                 android:layout_below="@+id/optionACard"
+                android:transitionName="cardTransitionC"
                 android:layout_marginTop="15dp"
                 android:layout_marginLeft="5dp"
                 android:id="@+id/optionCCard"
@@ -128,12 +135,14 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/optionCTextView"
                     android:text="Option C"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
                 android:layout_toRightOf="@+id/optionCCard"
                 android:layout_below="@+id/optionBCard"
+                android:transitionName="cardTransitionD"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="15dp"
@@ -162,7 +171,8 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/optionDTextView"
                     android:text="Option D"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
             </android.support.v7.widget.CardView>
 
 

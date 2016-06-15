@@ -11,7 +11,7 @@
     tools:layout_editor_absoluteY="81dp">
 
     <android.support.v7.widget.CardView
-        android:id="@+id/materialyCardView"
+        android:id="@+id/materialsCardView"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_margin="10dp"
@@ -20,112 +20,113 @@
         android:stateListAnimator="@animator/lift"
         app:cardElevation="3dp">
 
+        <LinearLayout
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark">
+
+        </LinearLayout>
+
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/materialsText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="Materiały"
-            android:textAppearance="@android:style/TextAppearance.Widget.Button" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
-        android:id="@+id/autorCardView"
+        android:id="@+id/authorCardView"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_below="@+id/materialyCardView"
+        android:layout_below="@+id/materialsCardView"
         android:layout_margin="10dp"
         android:clickable="true"
         android:foreground="?android:attr/selectableItemBackground"
         android:stateListAnimator="@animator/lift"
         app:cardElevation="3dp">
+        <LinearLayout
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark">
+
+        </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="O autorze"
-            android:textAppearance="@android:style/TextAppearance.Widget.Button" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:id="@+id/authorText" />
 
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
-        android:id="@+id/wybierzCardView"
+        android:id="@+id/chooseCardview"
         android:layout_width="240dp"
         android:layout_height="160dp"
         android:layout_alignEnd="@+id/resolveTransitionCard"
-        android:layout_alignStart="@+id/autorCardView"
-        android:layout_below="@+id/autorCardView"
+        android:layout_alignStart="@+id/authorCardView"
+        android:layout_below="@+id/authorCardView"
         android:layout_marginTop="10dp"
         android:clickable="true"
         android:foreground="?android:attr/selectableItemBackground"
         android:stateListAnimator="@animator/lift"
         app:cardElevation="3dp">
+        <LinearLayout
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark">
+
+        </LinearLayout>
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/chooseText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="Wybierz"
-            android:textAppearance="@android:style/TextAppearance.Widget.Button"
-            android:textSize="20dp" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
-        android:id="@+id/cardView6"
+        android:id="@+id/optionsCardView"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_alignEnd="@+id/wybierzCardView"
+        android:layout_alignEnd="@+id/chooseCardview"
         android:layout_alignTop="@+id/cardView5"
         android:layout_marginStart="25dp"
         android:clickable="true"
         android:foreground="?android:attr/selectableItemBackground"
         android:stateListAnimator="@animator/lift"
         app:cardElevation="3dp">
+        <LinearLayout
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark">
+
+        </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="Ustaw"
-            android:textAppearance="@android:style/TextAppearance.Widget.Button" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:id="@+id/optionsText" />
 
-    </android.support.v7.widget.CardView>
-
-    <android.support.v7.widget.CardView
-        android:id="@+id/resolveTransitionCard"
-        android:transitionName="cardTransition"
-        android:layout_width="240dp"
-        android:onClick="goToResolveTest"
-        android:layout_height="160dp"
-        android:layout_alignTop="@+id/materialyCardView"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_toEndOf="@+id/materialyCardView"
-        android:clickable="true"
-        android:foreground="?android:attr/selectableItemBackground"
-        android:stateListAnimator="@animator/lift"
-        app:cardElevation="5dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Rozwiąż"
-            android:textAppearance="@android:style/TextAppearance.Widget.Button"
-            android:textSize="40dp" />
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
         android:id="@+id/cardView5"
         android:layout_width="210dp"
         android:layout_height="100dp"
-        android:layout_alignStart="@+id/wybierzCardView"
-        android:layout_below="@+id/wybierzCardView"
+        android:layout_alignStart="@+id/chooseCardview"
+        android:layout_below="@+id/chooseCardview"
         android:layout_marginTop="23dp"
         android:clickable="true"
         android:foreground="?android:attr/selectableItemBackground"
@@ -143,6 +144,31 @@
             android:transitionName="imageTransition" />
 
 
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/resolveTransitionCard"
+        android:transitionName="cardTransition"
+        android:layout_width="240dp"
+        android:onClick="goToResolveTest"
+        android:layout_height="160dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="9dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:stateListAnimator="@animator/lift"
+        app:cardElevation="5dp"
+        android:layout_alignTop="@+id/materialsCardView"
+        android:layout_toEndOf="@+id/materialsCardView">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Rozwiąż"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:id="@+id/resolveText" />
     </android.support.v7.widget.CardView>
 
 

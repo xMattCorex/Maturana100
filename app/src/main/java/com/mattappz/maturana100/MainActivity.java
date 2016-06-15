@@ -29,7 +29,12 @@ public void goToCheckScore(View v){
     public void goToResolveTest(View v){
         Intent i = new Intent(getApplicationContext(),ResolveTestActivity.class);
         Pair<View,String> p1= Pair.create(findViewById(R.id.resolveTransitionCard),"cardTransition");
-        ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(this,p1);
+        Pair<View,String> p2= Pair.create(findViewById(R.id.chooseCardview),"cardTransitionC");
+        Pair<View,String> p3= Pair.create(findViewById(R.id.materialsCardView),"cardTransitionB");
+        Pair<View,String> p4= Pair.create(findViewById(R.id.authorCardView),"cardTransitionA");
+        Pair<View,String> p5= Pair.create(findViewById(R.id.optionsCardView),"cardTransitionD");
+
+        ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(this,p1,p2,p3,p4,p5);
         startActivity(i,options.toBundle());
 
     }
