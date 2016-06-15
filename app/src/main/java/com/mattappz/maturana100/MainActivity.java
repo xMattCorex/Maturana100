@@ -26,6 +26,14 @@ public void goToCheckScore(View v){
 
 }
 
+    public void goToResolveTest(View v){
+        Intent i = new Intent(getApplicationContext(),ResolveTestActivity.class);
+        Pair<View,String> p1= Pair.create(findViewById(R.id.resolveTransitionCard),"cardTransition");
+        ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(this,p1);
+        startActivity(i,options.toBundle());
+
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

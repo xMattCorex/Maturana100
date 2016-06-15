@@ -79,6 +79,7 @@ public class CheckScoresActivity extends AppCompatActivity {
 
     public void onBackPressed() {
 
+
         if (verticalOffsett != 0) {
             mAppBarLayout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
                 @Override
@@ -88,8 +89,7 @@ public class CheckScoresActivity extends AppCompatActivity {
                     }
                 }
             });
-            mNestedScrollView= (NestedScrollView)findViewById(R.id.nestedCheckScores);
-            mNestedScrollView.scrollTo(0,0);
+
             fab.hide();
             mAppBarLayout.setExpanded(true);
 

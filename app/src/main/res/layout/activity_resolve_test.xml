@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_resolve_test"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mattappz.maturana100.ResolveTestActivity">
+
+    <android.support.v7.widget.CardView
+        android:transitionName="cardTransition"
+        android:id="@+id/resolveTransitionCard"
+        android:layout_height="310dp"
+        android:layout_width="match_parent"
+        android:clickable="false"
+        app:cardElevation="10dp"
+        >
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:id="@+id/questionTextView"
+     android:text="dummy TEXT"
+     android:layout_gravity="center"/>
+    </android.support.v7.widget.CardView>
+
+    <android.widget.RelativeLayout
+        android:id="@+id/relativeLayoutOptions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/resolveTransitionCard">
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/optionACard"
+                android:layout_height="80dp"
+                android:layout_width="170dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:stateListAnimator="@animator/lift"
+                app:cardElevation="5dp"
+                >
+                <android.widget.LinearLayout
+                    android:id="@+id/linearOptionA"
+                    android:layout_width="25dp"
+                    android:background="@color/colorPrimaryDark"
+
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="A"
+                        android:textColor="@color/cardview_light_background"
+                        android:gravity="center"/>
+
+                </android.widget.LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/optionATextView"
+                    android:text="Option A"
+                    android:layout_gravity="center"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/optionACard"
+                android:layout_marginTop="10dp"
+                android:id="@+id/optionBCard"
+                android:layout_height="80dp"
+                android:layout_width="170dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:stateListAnimator="@animator/lift"
+                app:cardElevation="5dp">
+                <android.widget.LinearLayout
+                    android:id="@+id/linearOptionB"
+                    android:layout_width="25dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="B"
+                    android:textColor="@color/cardview_light_background"
+                    android:gravity="center"/>
+                </android.widget.LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/optionBTextView"
+                    android:text="Option B"
+                    android:layout_gravity="center"/>
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_below="@+id/optionACard"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/optionCCard"
+                android:layout_height="80dp"
+                android:layout_width="170dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:stateListAnimator="@animator/lift"
+                app:cardElevation="5dp"
+                >
+                <android.widget.LinearLayout
+                    android:id="@+id/linearOptionC"
+                    android:layout_width="25dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="C"
+                        android:textColor="@color/cardview_light_background"
+                        android:gravity="center"/>
+                </android.widget.LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/optionCTextView"
+                    android:text="Option C"
+                    android:layout_gravity="center"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_toRightOf="@+id/optionCCard"
+                android:layout_below="@+id/optionBCard"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/optionDCard"
+                android:layout_height="80dp"
+                android:layout_width="170dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:stateListAnimator="@animator/lift"
+                android:elevation="5dp"
+                app:cardElevation="5dp">
+                <android.widget.LinearLayout
+                    android:id="@+id/linearOptionD"
+                    android:layout_width="25dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="D"
+                        android:textColor="@color/cardview_light_background"
+                        android:gravity="center"/>
+                </android.widget.LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/optionDTextView"
+                    android:text="Option D"
+                    android:layout_gravity="center"/>
+            </android.support.v7.widget.CardView>
+
+
+
+    </android.widget.RelativeLayout>
+</android.widget.RelativeLayout>
+
+
