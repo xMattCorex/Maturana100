@@ -10,4 +10,9 @@ public class ResolveTestActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resolve_test);
     }
+
+    @Override
+    public void onBackPressed(){
+        supportFinishAfterTransition();
+    }
 }
